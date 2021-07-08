@@ -1,0 +1,115 @@
+{
+	"TargetHistory" : {
+		reg_no_1 : {
+			"appsInfo" : {
+				app_package_name_1 : {
+					"DailyInfo" : {
+						date_1_starting_time : {
+							"date" : date_1_starting_time,
+							"target" : target_amount,
+							"used" : how_much_was_used_on_that_date
+						},
+						date_2_starting_time_and_so_on : {...}
+					},
+					"WeeklyInfo" : {
+						week_1_starting_time : {
+							"date" : week_1_starting_time,
+							"target" : target_amount,
+							"used" : how_much_was_used_on_that_week
+						},
+						week_2_starting_time_and_so_on : {...}
+					},
+					"dailyNotifications" : {
+						list_of_selected_daily_notifications
+					},
+					"weeklyNotifications" : {
+						list_of_selected_weekly_notifications
+					}
+				},
+				app_package_name_2_and_so_on : {...}
+			},
+			"appsInstallationInfo" : {
+				app_package_name_1 : {
+					"appName" : name_of_the_app,
+					"installationTime" : time_of_installation_of_this_app
+				},
+				app_package_name_2_and_so_on : {...}
+			}
+		},
+		reg_no_2_and_so_on : {...}
+	},
+
+	"UsageHistory" : {
+		reg_no_1 : {
+			hour_1_starting_time : [
+				{
+					"name" : name_of_the_app,
+					"packageName" : package_name_of_this_app,
+					"forgroundTime" : time_used_on_this_hour,
+					"launchCount" : number_of_time_opened_on_this_hour
+
+				},
+				{
+					info_about_another_app_and_so_on...
+				}
+			],
+			hour_2_starting_time_and_so_on : [...]
+		}
+	},
+	
+	"UserInfo" : {
+		reg_no_1 : {
+			"cg" : last_semester_gpa,
+			"gender" : gender,
+			"regNo" : registration_number,
+			"weekZeroStartTime" : experimentation_week_0_starting_time,
+			"weekOneStartTime" : experimentation_week_1_starting_time,
+			"weekTwoStartTime" : experimentation_week_2_starting_time,
+			"weekThreeStartTime" : experimentation_week_3_starting_time,
+			"weekFourStartTime" : experimentation_week_4_starting_time
+		},
+		reg_no_2_and_so_on : {...}
+	}
+}
+
+
+
+
+
+users
+	reg_no(user_id)
+	gender
+	cgpa
+	installation_date
+	week_0_start_time
+	week_1_start_time
+	week_2_start_time
+	week_3_start_time
+	week_4_start_time
+
+apps_usage_info
+	reg_no(user_id)
+	hour_starting_time
+	package_name(app_id)
+	usage_time_in_that_hour_for_the_app
+	launch_count_in_that_hour_for_the_app
+
+apps_installation_info
+	reg_no(user_id)
+	package_name(app_id)
+	app_installation_time
+
+targets_info
+	reg_no(user_id)
+	package_name(app_id)
+	target_date
+	target_type(daily or weekly)
+
+apps
+	package_name(app_id)
+	app_name
+
+
+
+
+
